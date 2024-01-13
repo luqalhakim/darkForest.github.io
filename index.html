@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- NavBar Section -->
@@ -32,6 +33,7 @@
           <div class="navbar-nav fw-bold">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Books</a>
             <a class="nav-link" href="#">Services</a>
           </div>
         </div>
@@ -42,7 +44,7 @@
     <!-- Hero Section -->
     <section class="z-2 hero container-fluid">
       <video
-        class="position-absolute top-0 start-0"
+        class="position-fixed hero_video top-0 start-0"
         playsinline="playsinline"
         autoplay="autoplay"
         muted="muted"
@@ -51,8 +53,11 @@
         <source src="assets/DarkForest.mp4" type="video/mp4" />
       </video>
 
-      <div class="text-center position-absolute top-50 start-50 translate-middle">
-        <p class="fw-bold fs-3">The Dark Forest in The World</p>
+      <div class="text-center position-absolute top-50 start-50 translate-middle" style="margin-top: 5%">
+        <p
+          class="position-fixed top-50 start-50 translate-middle-x fw-bold fs-3 text"
+          style="margin-top: -22.5vh; width: 100%"
+        ></p>
         <p class="fw-semibold fs-6">
           This bewitching landscape along the Rhine River looks just as you'd imagine — so dense with fir and pine trees
           that sunlight barely pierces through. It makes an ideal playground for mythological creatures like sorcerers,
@@ -70,5 +75,18 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const exampleText = ["The Dark Forest"];
+        const exampleTyping = new AutoTyping(".text", exampleText, {
+          typeSpeed: 50,
+          deleteSpeed: 40,
+          waitBeforeDelete: 2000,
+          waitBetweenWords: 500,
+        });
+        exampleTyping.start();
+      });
+    </script>
   </body>
 </html>
