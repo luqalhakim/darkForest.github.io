@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <!-- CSS Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,13 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="container-fluid">
     <!-- NavBar Section -->
-    <nav class="z-1 navbar navbar-expand-lg">
-      <div class="container-fluid mx-5">
-        <a class="navbar-brand fw-bold" href="#">IceuFrozz</a>
+    <nav class="z-1 navbar navbar-expand-lg mx-5">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold logo" href="#">IceuFrozz</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,7 +34,8 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">About</a>
             <a class="nav-link" href="#">Books</a>
-            <a class="nav-link" href="#">Services</a>
+            <!-- For my Next Plan
+            <a class="nav-link" href="#">Achievement</a> -->
           </div>
         </div>
       </div>
@@ -42,7 +43,7 @@
     <!-- Enf of NavBar Section -->
 
     <!-- Hero Section -->
-    <section class="z-2 hero container-fluid">
+    <section class="z-2 hero">
       <video
         class="position-fixed hero_video top-0 start-0"
         playsinline="playsinline"
@@ -53,32 +54,50 @@
         <source src="assets/DarkForest.mp4" type="video/mp4" />
       </video>
 
-      <div class="text-center position-absolute top-50 start-50 translate-middle" style="margin-top: 5%">
-        <p
-          class="position-fixed top-50 start-50 translate-middle-x fw-bold fs-3 text"
-          style="margin-top: -22.5vh; width: 100%"
-        ></p>
-        <p class="fw-semibold fs-6">
-          This bewitching landscape along the Rhine River looks just as you'd imagine — so dense with fir and pine trees
-          that sunlight barely pierces through. It makes an ideal playground for mythological creatures like sorcerers,
-          werewolves, witches, and kindhearted dwarves.
+      <div class="container position-absolute top-50 start-50 translate-middle text-center p-5">
+        <!-- The Dark Forest Tag P -->
+        <p class="position-fixed start-50 translate-middle-x fw-bold fs-3 text"></p>
+        <p class="fs-6 px-6 text-description">
+          Does writing at night yield your best ideas? If your best ideas come to you just before bed you’re keeping
+          company with some of our famous authors like T.S. Eliot, Robert Frost, Barack Obama, Danielle Steele, and
+          more!
         </p>
-        <a href="https://en.wikipedia.org/wiki/The_Dark_Forest" target="_blank" class="btn btn-light fw-semibold"
+        <a
+          href="https://www.novlr.org/the-reading-room/writing-at-night"
+          target="_blank"
+          class="btn btn-light fw-semibold"
           >Read More</a
         >
       </div>
     </section>
     <!-- End of Hero Section -->
 
+    <!-- Scroll Down Button Section-->
+    <section id="section10" class="demo">
+      <a href="#about"><span></span>Scroll</a>
+    </section>
+    <!-- End Of Scroll Down Button Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about position-absolute start-50 translate-middle-x bg-secondary-subtle">
+      <div class="position-relative start-50 translate-middle-x text-center p-5">
+        <h3 class="fw-semibold">The Night Writers</h3>
+      </div>
+    </section>
+    <!-- Enf of About Section -->
+
+    <!-- Bootstrap 5 script JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- script JS animation typing-->
     <script src="script.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const exampleText = ["The Dark Forest"];
+        const exampleText = ["Are You a Nightime Writer? "];
         const exampleTyping = new AutoTyping(".text", exampleText, {
           typeSpeed: 50,
           deleteSpeed: 40,

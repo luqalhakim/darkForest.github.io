@@ -1,3 +1,4 @@
+// Code for Typing Animation
 var AutoTyping = (function (e) {
   var t = {};
   function r(n) {
@@ -107,3 +108,13 @@ var AutoTyping = (function (e) {
     };
   },
 ]).default;
+// End of Typing Animation Code
+
+// Code For Scroll Down Button
+$(function () {
+  $("a[href*=#]").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500, "linear");
+  });
+});
+// End Code of Scroll Down Button
