@@ -111,10 +111,14 @@ var AutoTyping = (function (e) {
 // End of Typing Animation Code
 
 // Code For Scroll Down Button
-$(function () {
-  $("a[href*=#]").on("click", function (e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500, "linear");
-  });
-});
+// $(function () {
+//   $("a[href*=#]").on("click", function (e) {
+//     e.preventDefault();
+//     $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500, "linear");
+//   });
+// });
 // End Code of Scroll Down Button
+
+// Code for Hide Link Preview on left/right
+
+// End of Code of Hide Link Preview
