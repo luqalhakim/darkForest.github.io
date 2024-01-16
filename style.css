@@ -124,6 +124,7 @@
 /* About Section */
 .about {
   min-width: 100%;
+  min-height: 100vh;
 }
 
 .about h1,
@@ -137,7 +138,7 @@ h6 {
 
 /* Animation Border on Image */
 
-.about img {
+.about .circle-animation img {
   --color: #8e8e8e; /* the color of the border */
   --border: 3%; /* the thickness of the border */
   --offset: 30px; /* control the movement of the border */
@@ -162,7 +163,15 @@ h6 {
   transition: 0.3s;
 }
 
-.about img:hover {
+.about .circle-animation img:hover {
   --_s: 0px;
 }
 /* End of About Section */
+
+.books {
+  overflow: hidden;
+}
+
+#books .wasteland img {
+  border-radius: 0;
+}

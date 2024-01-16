@@ -17,7 +17,7 @@
     <!-- NavBar Section -->
     <nav class="z-1 navbar navbar-expand-lg">
       <div class="container-fluid mx-5">
-        <a class="navbar-brand fw-bold logo" href="https://www.instagram.com/luq.elha" target="_blank">ITC-Com</a>
+        <a class="navbar-brand fw-bold logo" href="https://www.instagram.com/luq.elha" target="_blank">ITCom</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,7 +33,7 @@
           <div class="navbar-nav fw-bold">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#">Books</a>
+            <a class="nav-link" href="#books">Books</a>
             <!-- For my Next Plan
             <a class="nav-link" href="#">Achievement</a> -->
           </div>
@@ -43,7 +43,7 @@
     <!-- Enf of NavBar Section -->
 
     <!-- Hero Section -->
-    <section class="z-2 hero">
+    <section class="z-1 hero">
       <video
         class="position-fixed hero_video top-0 start-0"
         playsinline="playsinline"
@@ -59,8 +59,7 @@
         <p class="position-fixed start-50 translate-middle-x fw-bold fs-3 text"></p>
         <p class="fs-6 px-6 text-description">
           Does writing at night yield your best ideas? If your best ideas come to you just before bed you’re keeping
-          company with some of our famous authors like T.S. Eliot, Robert Frost, Barack Obama, Danielle Steele, and
-          more!
+          company with some of our famous authors like T.S. Eliot, Robert Frost, Barack Obama, and more!
         </p>
         <a
           href="https://www.novlr.org/the-reading-room/writing-at-night"
@@ -69,26 +68,29 @@
           >Read More</a
         >
       </div>
+
+      <!-- Scroll Down Button Section-->
+      <section id="section10" class="demo">
+        <a href="#about"><span></span>Scroll</a>
+      </section>
+      <!-- End Of Scroll Down Button Section -->
     </section>
     <!-- End of Hero Section -->
 
-    <!-- Scroll Down Button Section-->
-    <section id="section10" class="demo">
-      <a href="#about"><span></span>Scroll</a>
-    </section>
-    <!-- End Of Scroll Down Button Section -->
-
-    <!-- About Section -->
+    <!-- About and Books Section -->
     <section
       id="about"
-      class="about position-absolute start-50 translate-middle-x bg-black bg-gradient container-fluid text-center"
+      class="z-2 top-100 about position-absolute start-50 translate-middle-x bg-black bg-gradient container-fluid text-center"
     >
       <div class="position-relative start-50 translate-middle-x p-5">
         <h3 class="fw-semibold">The Night Writers</h3>
+        <p>
+          The hour is midnight and the library is deep, carried like a dreaming child into the darkness of these pages.
+        </p>
       </div>
-      <div class="container fluid d-flex justify-content-between">
-        <div class="row">
-          <div class="col-lg-4 px-5 mb-5">
+      <div class="container-fluid justify-content-between">
+        <div class="row mb-4">
+          <div class="col-lg-4 px-5 mb-5 circle-animation">
             <img src="assets/T.S. Eliot.png" class="img-fluid rounded-circle img" alt="T.S Eliot" />
             <h4>Thomas Stearns Eliot</h4>
             <p>
@@ -99,7 +101,7 @@
               >View Details >></a
             >
           </div>
-          <div class="col-lg-4 px-5 mb-5">
+          <div class="col-lg-4 px-5 mb-5 circle-animation">
             <img src="assets/Barack Obama.png" class="img-fluid rounded-circle img" alt="Barack Obama" />
             <h4>Barack Obama</h4>
             <p>
@@ -110,7 +112,7 @@
               >View Details >></a
             >
           </div>
-          <div class="col-lg-4 px-5 mb-5">
+          <div class="col-lg-4 px-5 mb-5 circle-animation">
             <img src="assets/Robert Frost.png" class="img-fluid rounded-circle img" alt="Robert Frost" />
             <h4>Robert Frost</h4>
             <p>
@@ -123,10 +125,87 @@
           </div>
         </div>
       </div>
+
+      <!-- Books Section -->
+      <hr />
+
+      <div class="position-relative start-50 translate-middle-x text-center container-fluid" id="books">
+        <div class="row p-5 justify-content-between">
+          <div class="col-lg-6 text-start mb-5 order-md-1">
+            <h1>The Waste Land</h1>
+            <p>
+              The Waste Land is a poem by T. S. Eliot, widely regarded as one of the most important English language
+              poems of the 20th century and a central work of modernist poetry. Published in 1922, the poem first
+              appeared in the United Kingdom in the October issue of Eliot's The Criterion and in the United States in
+              the November issue of The Dial.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/The_Waste_Land" class="btn btn-light" target="_blank"
+              >View Details >></a
+            >
+          </div>
+          <div class="col-lg-3 wasteland order-0">
+            <img src="assets/The Waste Land.jpg" class="img-fluid" width="200" height="200" alt="The Waste Land" />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="position-relative start-50 translate-middle-x text-center container-fluid" id="books">
+        <div class="row p-5 justify-content-between">
+          <div class="col-lg-6 text-start mb-5">
+            <h1>A Promised Line</h1>
+            <p>
+              A riveting, deeply personal account of history in the making—from the president who inspired us to believe
+              in the power of democracy In the stirring, highly anticipated first volume of his presidential memoirs,
+              Barack Obama tells the story of his improbable odyssey from young man searching for his identity to leader
+              of the free world, describing in strikingly personal detail both his political education and the landmark
+              moments of the first term of his historic presidency—a time of dramatic transformation and turmoil.
+            </p>
+            <a href="https://barackobamabooks.com/#a-promised-land" class="btn btn-light" target="_blank"
+              >View Details >></a
+            >
+          </div>
+          <div class="col-lg-3 wasteland">
+            <img src="assets/A Promised Land.png" class="img-fluid" width="200" height="200" alt="The Waste Land" />
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="position-relative start-50 translate-middle-x text-center container-fluid order-0" id="books">
+        <div class="row p-5 justify-content-between">
+          <div class="col-lg-6 text-start mb-5 order-md-1">
+            <h1>Stopping By Woods</h1>
+            <p>
+              "Stopping by Woods on a Snowy Evening" is a poem by Robert Frost, written in 1922, and published in 1923
+              in his New Hampshire volume. Imagery, personification, and repetition are prominent in the work. In a
+              letter to Louis Untermeyer, Frost called it "my best bid for remembrance".
+            </p>
+            <a
+              href="https://www.poetryfoundation.org/poems/42891/stopping-by-woods-on-a-snowy-evening"
+              class="btn btn-light"
+              target="_blank"
+              >View Details >></a
+            >
+          </div>
+          <div class="col-lg-3 wasteland order-md-0">
+            <img src="assets/Stopping By Woods.jpg" class="img-fluid" width="200" height="200" alt="The Waste Land" />
+          </div>
+        </div>
+      </div>
+      <!-- End of Books Section -->
     </section>
     <!-- Enf of About Section -->
 
-    <section id="books" class="position-absolute"></section>
+    <!-- Footer -->
+    <!-- <footer class="z-2 mt-auto text-center" style="border: 1px solid red">
+      <div>
+        <p>&copy; 2020-2021</p>
+      </div>
+    </footer> -->
+    <!-- End of Footer -->
 
     <!-- Bootstrap 5 script JS -->
     <script
