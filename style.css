@@ -16,9 +16,37 @@
 }
 
 /* Navbar CSS */
-.logo {
-  font-family: "Satisfy", cursive;
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
 }
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  background-color: rgb(224, 255, 221);
+  width: 0%;
+  height: 4px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
 /* End of Navbar CSS */
 
 /* Hero CSS */
@@ -177,6 +205,13 @@ h6 {
   border-radius: 0;
 }
 
+/* Contact Us */
+div#contact {
+  overflow: hidden;
+}
+
+/* End of Contact Us */
+
 /* Footer Section */
 div.sosialMedia {
   overflow: hidden;
@@ -202,4 +237,5 @@ button#btn-back-to-top {
   right: 20px;
   display: none;
 }
+
 /* End of Back To Top Scroll Button*/
