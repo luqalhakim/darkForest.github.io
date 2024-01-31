@@ -10,9 +10,18 @@
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 .container-fluid::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
   overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
 }
 
 /* Navbar CSS */
